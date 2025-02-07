@@ -13,9 +13,9 @@ import java.util.UUID;
 public class PasswordResetServiceImpl implements PasswordResetService{
     @Autowired
     private UserRepository userRepository;
-
+    @Autowired
     private EmailService emailService;
-
+    @Autowired
     private BCryptPasswordEncoder passwordEncoder;
 
     public void requestPasswordReset(String email) {
